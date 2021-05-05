@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>SEAL SAT - Seal Sat Proposal</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../style.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/libs/html5.js"><\/script>')</script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/bookScript.js"></script>
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="main">
+    <div class="header">
+        <img id="logo" src="../img/logo.png" />
+        <span class="section">
+            <ul>
+                <li>
+                    <a href="../index.html" title="Introduction">Introduction</a>
+                    <span>The requirement of satellite infrastructure for the North.</span>
+                </li>
+                <li>
+                    <a href="../orbits/index.html" title="Orbits">Orbits</a>
+                    <span>Details of orbits used currently and possible options.</span>
+                </li>
+                <li class="active">
+                    <a href="../proposal/index.html" title="SEAL SAT">SEAL SAT</a>
+                    <span>Description of the SEAL SAT orbit proposal.</span>
+                </li>
+                <li>
+                    <a href="../appendix/index.html" title="Appendix">Appendix</a>
+                    <span>TLEs for the SEAL SAT proposal.</span>
+                </li>
+                <li>
+                    <a href="../links/index.html" title="Links">Links</a>
+                    <span>Useful links.</span>
+                </li>
+            </ul>
+        </span>
+    </div>
+    <div class="clear"></div>
+    <div class="chapterArea">
+        <ul class="chapter">
+            <li class="activeChapter">
+                <a href="./index.html#proposal" title="Proposal">Proposal</a>
+            </li>
+            <li>
+                <a href="./index.html#aspects" title="aspects">Aspects</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1 id="proposal">Proposal</h1>
+        <p>The Seal Sat proposal makes use of a constellation of three satellites in Molniya orbits.  Named Seal 1, Seal 2 and Seal 3, these satellites allow for constant coverage across Canada's north, extending to Alaska and Greenland.  The following video provides a demonstration of the Seal Sat constellation.</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F7D-xI1hM7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="caption">Demonstration video for the SEAL SAT proposal</span>
+        </div>
+        <p>These demonstration orbits are achieved by using the following orbital variables in a TLE orbit model:</p>
+        <div class="dataTable2Column">
+            <span class="col1">
+                <span>SEAL 1</span>
+                <span>Inclination</span>
+                <span>Right Ascension of the Ascending Node</span>
+                <span>Eccentricity</span>
+                <span>Argument of Perigee</span>
+                <span>Mean Anomaly</span>
+                <span>Mean Motion</span>
+            </span>
+            <span class="col2">
+                <span>&nbsp;</span>
+                <span>63.435&deg;</span>
+                <span>62.5&deg;</span>
+                <span>0.75</span>
+                <span>270&deg;</span>
+                <span>360&deg;</span>
+                <span>2 Orbits/day</span>
+            </span>
+        </div>
+        <div class="dataTable2Column">
+            <span class="col1">
+                <span>SEAL 2</span>
+                <span>Inclination</span>
+                <span>Right Ascension of the Ascending Node</span>
+                <span>Eccentricity</span>
+                <span>Argument of Perigee</span>
+                <span>Mean Anomaly</span>
+                <span>Mean Motion</span>
+            </span>
+            <span class="col2">
+                <span>&nbsp;</span>
+                <span>63.435&deg;</span>
+                <span>182.5&deg;</span>
+                <span>0.75</span>
+                <span>270&deg;</span>
+                <span>120&deg;</span>
+                <span>2 Orbits/day</span>
+            </span>
+        </div>
+        <div class="dataTable2Column">
+            <span class="col1">
+                <span>SEAL 3</span>
+                <span>Inclination</span>
+                <span>Right Ascension of the Ascending Node</span>
+                <span>Eccentricity</span>
+                <span>Argument of Perigee</span>
+                <span>Mean Anomaly</span>
+                <span>Mean Motion</span>
+            </span>
+            <span class="col2">
+                <span>&nbsp;</span>
+                <span>63.435&deg;</span>
+                <span>302.5&deg;</span>
+                <span>0.75</span>
+                <span>270&deg;</span>
+                <span>240&deg;</span>
+                <span>2 Orbits/day</span>
+            </span>
+        </div>
+        <p>Due to the inaccuracy of TLE models over time, these variables are only for demonstration purposes.  Accurate orbit models and variables would be required to achieve an accurate and long term ground track.</p>
+        <h2 id="aspects">Proposal Aspects</h2>
+        <h3 id="obstacles">Obstacles</h3>
+        <p>The Molniya orbit is not a perfect solution for satellite coverage of the North.  Earth stations will require satellite dishes and antennae capable of acquiring a non-stationary target.  The low altitude perigee may present a collision hazard due to space debris, for example the debris caused by the satellite collision in 2009.  Furthermore, Russia has made frequent use of the Molniya orbit and all viable options for this orbit may already be occupied by existing spacecraft.  Additional research must be accomplished in order to determine its feasibility.</p>
+        <h3 id="opportunities">Opportunities</h3>
+        <p>Recent advances in satellite technology enable a multitude of possible capabilities for satellites in this type of orbit.  New antenna technology could drastically reduce the need for tracking.  Mesh networking technology, and likely more satellites within the constellation, could allow for communications between satellites.  Providing an opportunity for failover, greater coverage area or communication between earth stations without the need for a double hop.</p>
+        <p>The satellite industry is also exploring low cost satellite options.  Organizations such as NASA, through their open government <a href="http://open.nasa.gov/plan/phonesat/" title="PhoneSat">PhoneSat</a> and <a href="http://www.nasa.gov/directorates/heo/home/CubeSats_initiative.html" title="CubeSat">CubeSat</a> initiatives, and the start-up company <a href="http://www.wired.com/wiredscience/2013/06/startup-skybox/" title="Skybox">Skybox</a> are proving that low cost satellites are possible and a competitor to traditional high cost satellite systems.  The main focus of these initiatives is the use of "off the shelf" components to complete a satellite solution.  For telecommunications satellites it is now possible to pursue satellite solutions which are low cost and short lived.  This means that satellites can be launched and replaced in response to bandwidth demand at a much more rapid pace.</p>
+        <h3 id="forward">Going Forward</h3>
+        <p>The Seal Sat proposal is an achievable and profitable project to pursue.  It provides the telecommunications infrastructure which is desperately needed in Canada's north and solves many of the issues alternative land based technologies cannot overcome affordably.  It is mature, scalable, wide reaching and multi-functional.  Few methods rival the capabilities and affordability of the Molniya orbit for the Arctic.</p>
+        <ul class="pageNavigation">
+            <li id="previous">
+                <a href="../orbits/index.html">Previous Page</a>
+            </li>
+            <li id="next">
+                <a href="../appendix/index.html" title="Next Page">Next Page</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

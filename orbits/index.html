@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>SEAL SAT - Orbits</title>
+    <meta name="description" content="A description of the SEAL SAT project.">
+    <meta name="author" content="Chris Fraser">
+    <link rel="stylesheet" href="../style.css">
+
+    <!--[if lt IE 9]>
+    <script src="http:////html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/libs/html5.js"><\/script>')</script>
+    <![endif]-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/bookScript.js"></script>
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="main">
+    <div class="header">
+        <img id="logo" src="../img/logo.png" />
+        <span class="section">
+            <ul>
+                <li>
+                    <a href="../index.html" title="Introduction">Introduction</a>
+                    <span>The requirement of satellite infrastructure for the North.</span>
+                </li>
+                <li class="active">
+                    <a href="../orbits/index.html" title="Orbits">Orbits</a>
+                    <span>Details of orbits used currently and possible options.</span>
+                </li>
+                <li>
+                    <a href="../proposal/index.html" title="SEAL SAT">SEAL SAT</a>
+                    <span>Description of the SEAL SAT orbit proposal.</span>
+                </li>
+                <li>
+                    <a href="../appendix/index.html" title="Appendix">Appendix</a>
+                    <span>TLEs for the SEAL SAT proposal.</span>
+                </li>
+                <li>
+                    <a href="../links/index.html" title="Links">Links</a>
+                    <span>Useful links.</span>
+                </li>
+            </ul>
+        </span>
+    </div>
+    <div class="clear"></div>
+    <div class="chapterArea">
+        <ul class="chapter">
+            <li class="activeChapter">
+                <a href="./index.html#arcticCoverage" title="Arctic Coverage">Arctic Coverage</a>
+            </li>
+            <li id="molniya_OrbitLink">
+                <a href="./index.html#molniyaOrbit" title="Molniya Orbit">Molniya Orbit</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1 id="arcticCoverage">Arctic Coverage</h1>
+        <span class="figureFloatRight">
+            <img src="./img/geostationaryOrbit.jpg" title="Geostationary Orbit" alt="Geostationary Orbit" style="width:280px;"/>
+            <span class="caption"><em>Figure 2.1</em> Artist representation of a satellite in orbit.</span>
+        </span>
+        <p>Typically, communications satellites use a geostationary orbit to provide constant coverage over an area.  Other orbit examples are low earth orbits in the case of the Iridium constellation and the Tundra orbit used for the Sirius constellation.  These orbits are not an efficient method of canvasing all of Canada's arctic.</p>
+        <p>Two alternate options for high latitude coverage are the Molniya orbit and Polar orbit.  Molniya orbits work well for stationary coverage in northern latitudes with wide a longitudinal area.  Polar orbits are capable of providing coverage for both southern and northern latitudes with highly variable perturbation and less coverage longitudinally.</p>
+        <p>In order to canvas Canada's arctic an orbit must allow for coverage at high latitudes across a wide longitudinal area and have minimal perturbation.  A satellite with a Molniya orbit would accomplish this.</p>
+        <h2 id="molniyaOrbit">Molniya Orbit</h2>
+        <p>Invented in the 1960s for telecommunication satellite coverage over northern Russia, the Molniya orbit is elliptical with high inclination.  Unlike their geostationary counterparts, satellites in a Molniya orbit are not stationary relative to their ground position and require the use of a constellation of multiple satellites to provide constant coverage over an area.  This orbit is almost unaffected by the oblateness of the earth, which causes perturbations in the argument of perigee, and makes use of an apogee of approximately 40,000km with a low altitude perigee.  Due to Kepler's laws of planetary motion, this means that satellites in a Molniya orbit spend considerably more time at their apogee than their perigee; allowing for a long period of coverage during each orbital period.  This orbit's low altitude perigee provides for cheaper launch costs than typical geostationary orbit insertion.</p>
+        <p>To achieve a Molniya orbit, a satellite must have the following orbital constants:</p>
+        <span class="tableAlign">
+        <span class="figureFloatRight">
+            <img src="./img/molniya.gif" title="Molniya Orbit" alt="Molniya Orbit" style="width:250px;" />
+        </span>
+        <div class="tableAlignCell">
+            <div class="dataTable2Column">
+                <span class="col1">
+                    <span>Inclination</span>
+                    <span>Argument of Perigee</span>
+                    <span>Mean Motion</span>
+                </span>
+                <span class="col2">
+                    <span>63.435&deg;</span>
+                    <span>-90&deg;</span>
+                    <span>2 orbits/day</span>
+                </span>
+            </div>
+        </div>
+        </span>
+        <p>Due to a Molniya satellite's motion around the earth, a constellation of multiple satellites is required to provide constant coverage over the north.  This orbit allows for 8 hours of coverage for each day, meaning that a minimum of three satellites are required.  Each satellite's Right Ascension of the Ascending Node, the angle between the vernal equinox and where the orbit crosses the equator going northward, must be separated by 120 degrees in order to form a net around the globe.</p>
+        <span class="figure">
+            <img src="./img/molniya_track.jpg" title="Molniya Ground Track" alt="Molniya Ground Track" />
+            <span>Sample ground track of a single satellite in Molniya orbit.</span>
+        </span>
+        <ul class="pageNavigation">
+            <li id="previous">
+                <a href="../index.html">Previous Page</a>
+            </li>
+            <li id="next">
+                <a href="../proposal/index.html" title="Next Page">Next Page</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
