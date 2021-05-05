@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Chapter 4 - Bar Charts</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../style.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/libs/html5.js"><\/script>')</script>
+    <![endif]-->
+    
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/raphael.min.js"></script>
+    <script src="../js/g.raphael.js"></script>
+    <script src="../js/g.bar-min.js"></script>
+    <script src="../js/morris.min.js"></script>
+    <script>
+        $(function() {
+            var chart1 = Raphael("chart1", 761, 250),
+                fin = function () {
+                    this.flag = chart1.popup(this.bar.x, this.bar.y, this.bar.value || "0").insertBefore(this);
+                },
+                fout = function () {
+                    this.flag.animate({opacity: 0}, 200, function () {this.remove();});
+                },
+                txtattr = { font: "12px sans-serif" };
+                
+            chart1.barchart(15, 10, 250, 200, [[34, 65, 12, 90, 50], [5, 10, 15, 4, 1]], {stacked: true, axis: "0 0 1 1"}).hover(fin, fout);
+        });
+    </script>
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <img src="../img/logo.png" width="300px" height="70px" />
+        </div>
+        <span id="section">
+            <ul>
+                <li class="active">
+                    <a href="../index.html" title="Figures">Figures</a>
+                    <span>In this section are examples of figures and charts are shown.  We can make this snippet quite long or very short.  It's all up to you!</span>
+                </li>
+                <li>
+                    <a href="../s2/c1.html" title="Multimedia">Multimedia</a>
+                    <span>In this section are examples of streaming audio and video.</span>
+                </li>
+                <li>
+                    <a href="../s3/c1.html" title="Typography">Typography</a>
+                    <span>Quotes and technical excerpts are shown here.</span>
+                </li>
+                <li>
+                    <a href="../s4/c1.html" title="Section 4">Section 4</a>
+                    <span>nothing nothing nothing nothing nothing nothing nothing nothing</span>
+                </li>
+                <li>
+                    <a href="../s5/c1.html" title="Section 5">Section 5</a>
+                    <span>nothing nothing nothing nothing nothing nothing nothing nothing</span>
+                </li>
+            </ul>
+        </span>
+    </div>
+    <div id="chapter">
+        <ul>
+            <li>
+                <a href="../index.html" title="Chapter 1">Pictures</a>
+            </li>
+            <li>
+                <a href="./c2.html" title="Chapter 2">Line Charts</a>
+            </li>
+            <li>
+                <a href="./c3.html" title="Chapter 3">Pie Charts</a>
+            </li>
+            <li class="active">
+                <a href="./c4.html" title="Chapter 4">Bar Charts</a>
+            </li>
+            <li>
+                <a href="./c5.html" title="Chapter 5">Chapter 5</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Chapter 4 - Bar charts...</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas ipsum lectus, venenatis sagittis orci. Integer et sapien ut nibh varius tempor. Suspendisse potenti. Aliquam eget mauris arcu, a dictum enim. Sed ultrices magna eget est porta viverra. Etiam gravida ultrices massa, sit amet blandit urna rutrum ac. Vivamus viverra varius molestie.</span>
+        <span class="graphZone">
+            <div class="barChart" id="chart1"></div>
+            <span class="caption"><em>Chart 1.4.1: </em>Here I demonstrate a bar chart.</span>
+        </span>
+        <span>Curabitur metus augue, euismod rutrum sodales eget, pharetra in eros. Nulla in ultricies arcu. Vivamus non interdum felis. Proin mi augue, tempor vitae vestibulum et, congue facilisis diam. Nam sed cursus mi. Nam iaculis pretium congue. Praesent vel felis orci, eu lacinia massa. Pellentesque rhoncus faucibus mi tempus iaculis. Sed ut risus sem. Quisque blandit metus sed ipsum egestas viverra. Quisque hendrerit velit ut ante luctus sed adipiscing mauris bibendum. Donec rutrum varius nisl nec tincidunt. Pellentesque dictum consectetur cursus. Duis sit amet ullamcorper lorem. Quisque id metus placerat tellus faucibus commodo.</span>
+    </div>
+</div>
+</body>
+</html>
