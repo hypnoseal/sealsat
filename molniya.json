@@ -1,0 +1,128 @@
+{
+"version": "1.0",
+"name": "SEAL Sats",
+
+"items" :
+[
+{
+    "trajectoryFrame": "EquatorJ2000",
+    "trajectoryPlot": {
+        "fade": 0,
+        "duration": 1,
+        "lead": 1
+    },
+    "name": "SEAL 1",
+    "geometry": {
+        "source": "models/jason.obj",
+        "type": "Mesh",
+        "size": 0.005
+    },
+    "trajectory": {
+        "source": "SEAL_MADE_THIS",
+        "type": "TLE",
+        "name": "SEAL SAT 1",
+        "line1": "1 12345U 12345A   13013.88534400 -.00000001  00000-0  00000-0 0  0016",
+        "line2": "2 12345  63.4350 062.5000 7500000 270.0000 360.0000  2.00000000000014"
+    },
+    "bodyFrame": {
+        "secondaryAxis": "-y",
+        "primaryAxis": "-x",
+        "type": "TwoVector",
+        "primary": {
+            "type": "RelativePosition",
+            "target": "Earth",
+            "observer": "SEAL SAT 1"
+        },
+        "secondary": {
+            "type": "RelativeVelocity",
+            "target": "Earth",
+            "observer": "SEAL SAT 1"
+        }
+    },
+    "center": "Earth",
+    "label": {
+        "color": "#11bb44"
+    }
+},
+{
+    "trajectoryFrame": "EquatorJ2000",
+    "trajectoryPlot": {
+        "fade": 0,
+        "duration": 1,
+        "lead": 1
+    },
+    "name": "SEAL 2",
+    "geometry": {
+        "source": "models/jason.obj",
+        "type": "Mesh",
+        "size": 0.005
+    },
+    "trajectory": {
+        "source": "SEAL_MADE_THIS",
+        "type": "TLE",
+        "name": "SEAL SAT 2",
+        "line1": "1 12345U 12345A   13013.88534400 -.00000001  00000-0  00000-0 0  0016",
+        "line2": "2 12345  63.4350 182.5000 7500000 270.0000 120.0000  2.00000000000011"
+    },
+    "bodyFrame": {
+        "secondaryAxis": "-y",
+        "primaryAxis": "-x",
+        "type": "TwoVector",
+        "primary": {
+            "type": "RelativePosition",
+            "target": "Earth",
+            "observer": "SEAL SAT 2"
+        },
+        "secondary": {
+            "type": "RelativeVelocity",
+            "target": "Earth",
+            "observer": "SEAL SAT 2"
+        }
+    },
+    "center": "Earth",
+    "label": {
+        "color": "#11bb44"
+    }
+},
+{
+    "trajectoryFrame": "EquatorJ2000",
+    "trajectoryPlot": {
+        "fade": 0,
+        "duration": 1,
+        "lead": 1
+    },
+    "name": "SEAL 3",
+    "geometry": {
+        "source": "models/jason.obj",
+        "type": "Mesh",
+        "size": 0.005
+    },
+    "trajectory": {
+        "source": "SEAL_MADE_THIS",
+        "type": "TLE",
+        "name": "SEAL SAT 3",
+        "line1": "1 12345U 12345A   13013.88534400 -.00000001  00000-0  00000-0 0  0016",
+        "line2": "2 12345  63.4350 302.5000 7500000 270.0000 240.0000  2.00000000000018"
+    },
+    "bodyFrame": {
+        "secondaryAxis": "-y",
+        "primaryAxis": "-x",
+        "type": "TwoVector",
+        "primary": {
+            "type": "RelativePosition",
+            "target": "Earth",
+            "observer": "SEAL SAT 3"
+        },
+        "secondary": {
+            "type": "RelativeVelocity",
+            "target": "Earth",
+            "observer": "SEAL SAT 3"
+        }
+    },
+    "center": "Earth",
+    "label": {
+        "color": "#11bb44"
+    }
+}
+]
+}
